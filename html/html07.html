@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>출퇴근관리 - 근무 완료</title>
+  <!-- Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <div class="statusbar">
+      <div class="statusbar__time">9:41</div>
+      <div class="statusbar__right">
+        <div class="circle circle--sm"></div>
+        <div class="circle circle--sm"></div>
+        <div class="circle circle--sm"></div>
+      </div>
+    </div>
+
+    <header class="header" aria-label="상단바">
+      <div class="header__left">
+        <span>출퇴근관리</span>
+        <span class="chev">›</span>
+      </div>
+      <div class="header__right">
+        <div class="circle" aria-hidden="true"></div>
+        <button class="circle" type="button" data-action="open-menu" aria-label="메뉴 열기"></button>
+      </div>
+    </header>
+
+    <section class="datebar" aria-label="근무 정보">
+      <div class="datebar__date">05.25(토)</div>
+      <div class="datebar__meta">근무일 · 09:00 ~ 18:00</div>
+    </section>
+
+    <main aria-label="근무 완료 화면">
+      <section class="timer">
+        <div class="timer__label">근무 완료</div>
+        <div class="timer__range">09:05 - 18:00</div>
+      </section>
+
+      <section class="section">
+        <button class="btn btn--ghost" type="button" onclick="location.href='html02.html'">홈으로</button>
+      </section>
+    </main>
+
+    <nav class="nav" aria-label="하단 내비게이션">
+      <a class="nav__item is-active" data-nav="attendance" href="html07.html">
+        <div class="circle circle--sm"></div>
+        <span>출퇴근</span>
+      </a>
+      <a class="nav__item" data-nav="vacation" href="html08.html">
+        <div class="circle circle--sm"></div>
+        <span>휴가</span>
+      </a>
+      <a class="nav__item is-active" data-nav="work" href="html07.html" style="display:none;">
+        <div class="circle circle--sm"></div>
+        <span>근무</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>
+
+
+

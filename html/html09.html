@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>퇴근신청</title>
+  <!-- Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <!-- 바텀시트 단독 화면(피그마에서 모달로 보이는 화면을 별도 HTML로 분리) -->
+  <div id="overlay" class="overlay" aria-label="퇴근신청 모달">
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+      <div id="sheetTitle" class="sheet__title">퇴근신청</div>
+      <div class="sheet__hint">사유를 입력해 주세요</div>
+      <input id="reason" class="input" type="text" placeholder="예) 개인사유" />
+      <div class="sheet__actions">
+        <button id="submitBtn" class="btn btn--primary" type="button">퇴근신청</button>
+      </div>
+      <div style="margin-top: 10px; font-size: 12px;" class="muted">
+        배경 클릭 시 이전 화면으로 돌아갑니다.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+

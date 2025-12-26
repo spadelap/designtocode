@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>사용자 Main_MoWeb_출근 전</title>
+  <!-- Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/script.js" defer></script>
+</head>
+<body class="frame-bg">
+  <!-- 피그마 프레임: 14110-11246 -->
+  <div class="app frame-bg">
+    <!-- iOS 상태바 (아이콘은 동그라미로 대체) -->
+    <div class="statusbar">
+      <div class="statusbar__time">9:41</div>
+      <div class="statusbar__right">
+        <div class="circle circle--sm"></div>
+        <div class="circle circle--sm"></div>
+        <div class="circle circle--sm"></div>
+      </div>
+    </div>
+
+    <!-- 상단 타이틀/액션 -->
+    <header class="topbar" aria-label="상단바">
+      <div class="topbar__name">
+        <span>홍길동님</span>
+        <span class="chev">›</span>
+      </div>
+      <div class="topbar__actions">
+        <!-- 알림 아이콘(동그라미 + 뱃지) -->
+        <div class="circle badge-dot" aria-label="알림"></div>
+        <!-- 메뉴 아이콘(동그라미) -->
+        <button class="circle" type="button" data-action="open-menu" aria-label="메뉴 열기"></button>
+      </div>
+    </header>
+
+    <main class="main-wrap" aria-label="출근 전 홈">
+      <!-- 카드 1: 근무정보 -->
+      <section class="card" aria-label="근무정보 카드">
+        <div class="card__body">
+          <div class="card__title">05.20(화)</div>
+          <div class="card__sub">근무시간 09:00 ~ 18:00</div>
+        </div>
+        <div class="divider-dashed"></div>
+        <!-- 카드 2: 출근하기 -->
+        <div class="card__body card__body--lg">
+          <div class="status-row">
+            <div class="status-left">
+              <!-- 상태 아이콘(동그라미) -->
+              <div class="circle circle--sm" aria-hidden="true"></div>
+              <span>출근 전</span>
+            </div>
+            <button class="pill" type="button">보정신청</button>
+          </div>
+
+          <div class="time-big">07:58:13</div>
+
+          <div style="margin-top: 16px;">
+            <button id="checkInBtn" class="btn-home" type="button">출근하기</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 카드 3: 3개 메뉴 -->
+      <section class="card" aria-label="바로가기 메뉴 카드">
+        <div class="menu3">
+          <div class="menu3__item">
+            <div class="menu3__icon"></div>
+            <div>출근내역</div>
+          </div>
+          <div class="menu3__item">
+            <div class="menu3__icon" style="background:#d9f99d;"></div>
+            <div>휴가신청</div>
+          </div>
+          <div class="menu3__item">
+            <div class="menu3__icon" style="background:#ffedd5;"></div>
+            <div>공지/설문</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+

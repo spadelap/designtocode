@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>출퇴근관리 - 근무 중(출근시간 표시)</title>
+  <!-- Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <div class="statusbar">
+      <div class="statusbar__time">9:41</div>
+      <div class="statusbar__right">
+        <div class="circle circle--sm"></div>
+        <div class="circle circle--sm"></div>
+        <div class="circle circle--sm"></div>
+      </div>
+    </div>
+
+    <header class="header" aria-label="상단바">
+      <div class="header__left">
+        <span>출퇴근관리</span>
+        <span class="chev">›</span>
+      </div>
+      <div class="header__right">
+        <div class="circle" aria-hidden="true"></div>
+        <button class="circle" type="button" data-action="open-menu" aria-label="메뉴 열기"></button>
+      </div>
+    </header>
+
+    <section class="datebar" aria-label="근무 정보">
+      <div class="datebar__date">05.24(금)</div>
+      <div class="datebar__meta">근무일 · 09:00 ~ 18:00</div>
+    </section>
+
+    <main aria-label="출근시간 표시 화면">
+      <section class="timer">
+        <div class="timer__label">근무 중</div>
+        <div class="timer__range">08:50 -</div>
+      </section>
+
+      <section class="section section--tight">
+        <button id="checkOutBtn" class="btn btn--primary" type="button">퇴근하기</button>
+      </section>
+
+      <section class="section">
+        <div class="row" style="gap: 12px;">
+          <div class="circle circle--xl circle--warning"></div>
+          <div style="flex:1;">
+            <div style="font-weight:800; font-size:14px;">안내</div>
+            <div class="muted" style="font-size:12px; margin-top:4px; line-height:1.6;">
+              아직도 근무를 마치시려합니까? 오후 7시 이후 팀장님의 인정 시까지 연장근무 시간을 인정해 드립니다.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="nav" aria-label="하단 내비게이션">
+      <a class="nav__item is-active" data-nav="attendance" href="html05.html">
+        <div class="circle circle--sm"></div>
+        <span>출퇴근</span>
+      </a>
+      <a class="nav__item" data-nav="vacation" href="html08.html">
+        <div class="circle circle--sm"></div>
+        <span>휴가</span>
+      </a>
+      <a class="nav__item" data-nav="work" href="html07.html">
+        <div class="circle circle--sm"></div>
+        <span>근무</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>
+
+
+
