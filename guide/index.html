@@ -1,0 +1,178 @@
+<html><head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          primary: "#184f9a", // IBK Corporate Blue
+          secondary: "#4a86e8", // IBK Light Blue accent
+          "background-light": "#F8F9FB",
+          "background-dark": "#121212",
+          "surface-light": "#FFFFFF",
+          "surface-dark": "#1E1E1E",
+          "text-main-light": "#111827",
+          "text-main-dark": "#F9FAFB",
+          "text-sub-light": "#6B7280",
+          "text-sub-dark": "#9CA3AF",
+        },
+        fontFamily: {
+          display: ["'Noto Sans KR'", "sans-serif"],
+          sans: ["'Noto Sans KR'", "sans-serif"],
+        },
+        borderRadius: {
+          DEFAULT: "0.5rem",
+          'xl': '1rem',
+          '2xl': '1.5rem',
+        },
+        boxShadow: {
+            'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+            'card': '0 2px 10px rgba(0, 0, 0, 0.03)',
+        }
+      },
+    },
+  };
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<style>
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background-light dark:bg-background-dark text-text-main-light dark:text-text-main-dark transition-colors duration-300 antialiased selection:bg-primary selection:text-white">
+<div class="max-w-md mx-auto min-h-screen relative flex flex-col shadow-2xl overflow-hidden bg-background-light dark:bg-background-dark">
+<div class="h-12 w-full bg-surface-light dark:bg-surface-dark shrink-0"></div>
+<header class="sticky top-0 z-50 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 h-14 flex items-center justify-between px-4 transition-colors duration-300">
+<button class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<span class="material-icons-round text-2xl text-gray-800 dark:text-white">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-gray-900 dark:text-white">모바일 신분증 이용안내</h1>
+<button class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<span class="material-icons-round text-2xl text-gray-800 dark:text-white">close</span>
+</button>
+</header>
+<main class="flex-1 overflow-y-auto pb-24 hide-scrollbar">
+<section class="flex flex-col items-center pt-8 pb-10 px-6 bg-surface-light dark:bg-surface-dark text-center relative overflow-hidden transition-colors duration-300">
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-30 dark:opacity-10">
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-blue-100 rounded-full blur-3xl"></div>
+<div class="absolute top-40 -left-20 w-48 h-48 bg-blue-50 rounded-full blur-3xl"></div>
+</div>
+<div class="relative z-10">
+<span class="inline-block px-3 py-1 mb-4 text-xs font-semibold text-primary bg-blue-50 dark:bg-blue-900/30 dark:text-blue-300 rounded-full">
+                IBK 모바일 신분증
+            </span>
+<h2 class="text-2xl font-bold leading-tight mb-3">
+              더욱 스마트하고 안전한<br/>
+<span class="text-primary">모바일 신분증</span>
+</h2>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm leading-relaxed mb-8">
+              실물 IC 신분증 등록만으로<br/>
+              실물 신분증과 동일한 효력을 누리세요.
+            </p>
+<div class="relative w-full max-w-[280px] mx-auto aspect-[4/5] mb-4">
+<div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-3xl shadow-xl border-4 border-white dark:border-gray-700 flex flex-col items-center justify-center overflow-hidden">
+<div class="w-48 h-72 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex flex-col items-center p-4 relative border border-gray-100 dark:border-gray-700 transform transition-transform hover:scale-105 duration-500">
+<div class="w-16 h-16 rounded-full bg-gray-200 dark:bg-gray-600 mb-4 overflow-hidden relative">
+<img alt="ID Photo" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhYn8Yx10IshD5uH2I1LNgylwnrG9I26W3kE0HaVpJ_kRo73tzOffBZJAXTGSTnCWxuU7zcGGwlRhZxKb32jFVMlSsEpq-LYg6oMpk8L6UIRlBz1HD5JyyxjpwK8tv-DG_dAiTpUQDKgOz1aSVNGz-OMnKWUrO9JN8ScH5qA4J6ofNG7zskH-MoBlcxstbH3Ux4KXFZolYzbtOR8o4i4wYge16yJHd7ld7ycwlqlR9r9bZ5L7K_K3ah_3G12tvbk5PBdMcfIMHJOg"/>
+</div>
+<div class="w-24 h-3 bg-gray-100 dark:bg-gray-700 rounded mb-2"></div>
+<div class="w-16 h-2 bg-gray-50 dark:bg-gray-700 rounded mb-6"></div>
+<div class="absolute bottom-6 right-6 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg animate-bounce">
+<span class="material-icons-round text-white text-xl">verified_user</span>
+</div>
+</div>
+</div>
+<div class="absolute -right-4 top-10 w-12 h-12 bg-yellow-400 rounded-full blur-xl opacity-20"></div>
+<div class="absolute -left-4 bottom-10 w-16 h-16 bg-blue-600 rounded-full blur-xl opacity-20"></div>
+</div>
+</div>
+</section>
+<section class="px-5 py-8 space-y-4">
+<h3 class="text-lg font-bold px-1 mb-2">주요 혜택</h3>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-2xl shadow-card border border-gray-100 dark:border-gray-800 flex items-start space-x-4">
+<div class="bg-blue-50 dark:bg-gray-700 p-3 rounded-xl shrink-0 text-primary dark:text-blue-300">
+<span class="material-icons-round text-2xl">fingerprint</span>
+</div>
+<div>
+<h4 class="font-bold text-base mb-1">간편 인증</h4>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark leading-snug">
+                    지갑 없이 스마트폰만으로 본인 확인이 가능합니다. 복잡한 절차 없이 간편하게 인증하세요.
+                </p>
+</div>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-2xl shadow-card border border-gray-100 dark:border-gray-800 flex items-start space-x-4">
+<div class="bg-blue-50 dark:bg-gray-700 p-3 rounded-xl shrink-0 text-primary dark:text-blue-300">
+<span class="material-icons-round text-2xl">security</span>
+</div>
+<div>
+<h4 class="font-bold text-base mb-1">안전한 개인정보 보호</h4>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark leading-snug">
+                    블록체인 기술을 활용하여 개인정보 위변조가 불가능하며, 내 정보는 내가 직접 관리합니다.
+                </p>
+</div>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-2xl shadow-card border border-gray-100 dark:border-gray-800 flex items-start space-x-4">
+<div class="bg-blue-50 dark:bg-gray-700 p-3 rounded-xl shrink-0 text-primary dark:text-blue-300">
+<span class="material-icons-round text-2xl">storefront</span>
+</div>
+<div>
+<h4 class="font-bold text-base mb-1">온/오프라인 어디서나</h4>
+<p class="text-sm text-text-sub-light dark:text-text-sub-dark leading-snug">
+                    관공서, 편의점, 은행 등 신분증이 필요한 곳이라면 어디서든 사용 가능합니다.
+                </p>
+</div>
+</div>
+</section>
+<section class="px-5 py-6">
+<div class="flex items-center justify-between mb-4 px-1">
+<h3 class="text-lg font-bold">발급 절차 안내</h3>
+<a class="text-xs text-text-sub-light dark:text-text-sub-dark underline" href="#">자세히 보기</a>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div class="flex flex-col items-center text-center p-3 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700">
+<div class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center mb-2 text-primary font-bold">1</div>
+<span class="text-xs font-medium text-gray-600 dark:text-gray-300">신분증 준비</span>
+</div>
+<div class="flex flex-col items-center text-center p-3 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700">
+<div class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center mb-2 text-primary font-bold">2</div>
+<span class="text-xs font-medium text-gray-600 dark:text-gray-300">휴대폰 인증</span>
+</div>
+<div class="flex flex-col items-center text-center p-3 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700">
+<div class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center mb-2 text-primary font-bold">3</div>
+<span class="text-xs font-medium text-gray-600 dark:text-gray-300">발급 완료</span>
+</div>
+</div>
+</section>
+<section class="px-5 pb-8">
+<div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 flex justify-between items-center">
+<div>
+<h4 class="text-sm font-bold mb-1">발급이 안되시나요?</h4>
+<p class="text-xs text-text-sub-light dark:text-text-sub-dark">자주 묻는 질문을 확인해보세요.</p>
+</div>
+<span class="material-icons-round text-gray-400">chevron_right</span>
+</div>
+</section>
+</main>
+<div class="absolute bottom-0 left-0 w-full bg-surface-light dark:bg-surface-dark border-t border-gray-100 dark:border-gray-800 p-5 pb-8 z-50">
+<button class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+<span>모바일 신분증 발급하기</span>
+</button>
+</div>
+<div class="fixed bottom-1 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gray-300 dark:bg-gray-600 rounded-full z-[60]"></div>
+
+</body></html>
